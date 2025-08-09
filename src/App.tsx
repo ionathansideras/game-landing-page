@@ -1,7 +1,9 @@
+import Hero from "./components/Hero";
+
 function App() {
     return (
-        <main className="bg-amber-700">
-            <p className="text-5xl font-general text-violet-300">hello</p>
+        <main className="relative min-h-screen w-screen overflow-x-hidden">
+            <Hero />
         </main>
     );
 }
