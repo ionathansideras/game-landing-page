@@ -5,7 +5,6 @@ body {
     width: 100dvw;
     background-color: #dfdff0;
     overflow-x: hidden;
-    padding-bottom: 1000px;
 }
 
 @utility border-hsla {
@@ -100,6 +99,9 @@ body {
         transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
         transform-origin: 50% 50% -150px !important;
         will-change: opacity, transform;
+    }
+
+    .animated-word b {
         font-feature-settings: "ss01" 1;
         font-family: var(--font-zentry);
     }
