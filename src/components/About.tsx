@@ -20,7 +20,7 @@ const About = () => {
 
         clipAnimation.to(".mask-clip-path", {
             width: "100%",
-            height: "100vh",
+            height: "100svh",
             borderRadius: 0,
         });
     });
@@ -49,7 +49,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="h-dvh w-full" id="clip">
+            <div className="h-svh w-full" id="clip">
                 <div className="mask-clip-path about-image">
                     <img
                         src="img/about.webp"
