@@ -66,8 +66,7 @@ export default function Hero() {
     });
 
     useEffect(() => {
-        console.log("i loaded");
-        if (loadedVideos >= 1) {
+        if (loadedVideos >= 2) {
             setIsLoading(false);
         }
     }, [loadedVideos]);
@@ -78,7 +77,10 @@ export default function Hero() {
         setCurrentIndex(upComingVideoIndex);
     };
 
-    const getVideoSrc = (index: number) => `videos/hero-${index}.mp4`;
+    const getVideoSrc = (index: number) => {
+        console.log(index);
+        return `videos/hero-${index}.mp4`;
+    };
 
     const handleVideoLoaded = () => {
         setLoadedVideos((prevLoadedVideos) => prevLoadedVideos + 1);
@@ -113,6 +115,7 @@ export default function Hero() {
                                 ref={nextVideoRef}
                                 loop
                                 muted
+                                autoPlay
                                 playsInline
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
