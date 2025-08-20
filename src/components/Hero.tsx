@@ -66,6 +66,7 @@ export default function Hero() {
     });
 
     useEffect(() => {
+        console.log("i loaded");
         if (loadedVideos === totalVideos - 1) {
             setIsLoading(false);
         }
@@ -80,7 +81,6 @@ export default function Hero() {
     const getVideoSrc = (index: number) => `videos/hero-${index}.mp4`;
 
     const handleVideoLoaded = () => {
-        console.log("i loaded");
         setLoadedVideos((prevLoadedVideos) => prevLoadedVideos + 1);
     };
 
