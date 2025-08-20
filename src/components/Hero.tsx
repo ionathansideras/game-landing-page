@@ -80,11 +80,7 @@ export default function Hero() {
 
     const getVideoSrc = (index: number) => `videos/hero-${index}.mp4`;
 
-    const handleVideoLoadedData = () => {
-        setLoadedVideos((prevLoadedVideos) => prevLoadedVideos + 1);
-    };
-
-    const handleVideoCanPlayThrough = () => {
+    const handleVideoLoaded = () => {
         setLoadedVideos((prevLoadedVideos) => prevLoadedVideos + 1);
     };
 
@@ -120,8 +116,7 @@ export default function Hero() {
                                 playsInline
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
-                                onLoadedData={handleVideoLoadedData} // Handle LoadedData
-                                onCanPlayThrough={handleVideoCanPlayThrough} // Also handle CanPlayThrough
+                                onCanPlay={handleVideoLoaded}
                             ></video>
                         </div>
                     </div>
@@ -133,8 +128,7 @@ export default function Hero() {
                         muted
                         playsInline
                         loop
-                        onLoadedData={handleVideoLoadedData} // Handle LoadedData
-                        onCanPlayThrough={handleVideoCanPlayThrough} // Also handle CanPlayThrough
+                        onCanPlay={handleVideoLoaded}
                     ></video>
 
                     <video
@@ -146,8 +140,7 @@ export default function Hero() {
                         loop
                         playsInline
                         className="absolute left-0 top-0 size-full object-cover object-center"
-                        onLoadedData={handleVideoLoadedData} // Handle LoadedData
-                        onCanPlayThrough={handleVideoCanPlayThrough} // Also handle CanPlayThrough
+                        onCanPlay={handleVideoLoaded}
                     ></video>
                 </div>
                 <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
