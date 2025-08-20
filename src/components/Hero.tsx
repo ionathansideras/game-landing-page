@@ -58,7 +58,7 @@ export default function Hero() {
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: "#video-frame",
-                start: "center center",
+                start: "top top",
                 end: "bottom center",
                 scrub: true,
             },
