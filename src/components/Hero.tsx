@@ -88,7 +88,7 @@ export default function Hero() {
     return (
         <div className="relative h-svh w-full overflow-x-hidden" id="hero">
             {isLoading && (
-                <div className="flex-center absolute z-100 h-dvh w-full  overflow-hidden bg-violet-50">
+                <div className="flex-center absolute z-100 h-svh w-full  overflow-hidden bg-violet-50">
                     <div className="three-body">
                         <div className="three-body__dot"></div>
                         <div className="three-body__dot"></div>
@@ -98,7 +98,7 @@ export default function Hero() {
             )}
             <div
                 id="video-frame"
-                className="relative z-10 h-dvh w-full overflow-hidden rounded-lg bg-blue-75"
+                className="relative z-10 h-svh w-full overflow-hidden rounded-lg bg-blue-75"
             >
                 <div>
                     <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
