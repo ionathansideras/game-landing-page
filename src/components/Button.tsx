@@ -7,7 +7,7 @@ export default function Button({
     containerClass,
     rightIcon,
 }: {
-    id: string;
+    id?: string;
     title: string;
     leftIcon?: React.ReactNode;
     containerClass: string;
