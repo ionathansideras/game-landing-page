@@ -112,7 +112,7 @@ export default function Hero() {
                                 ref={nextVideoRef}
                                 loop
                                 muted
-                                autoPlay
+                                preload="metadata"
                                 playsInline
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
