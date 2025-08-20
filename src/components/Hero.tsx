@@ -86,7 +86,7 @@ export default function Hero() {
     };
 
     return (
-        <div className="relative h-dvh w-full overflow-x-hidden" id="hero">
+        <div className="relative h-svh w-full overflow-x-hidden" id="hero">
             {isLoading && (
                 <div className="flex-center absolute z-100 h-dvh w-full  overflow-hidden bg-violet-50">
                     <div className="three-body">
