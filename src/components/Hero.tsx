@@ -109,6 +109,7 @@ export default function Hero() {
                                 ref={nextVideoRef}
                                 loop
                                 muted
+                                playsInline
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
                                 onLoadedData={handleVideoLoaded}
@@ -121,6 +122,7 @@ export default function Hero() {
                         id="next-video"
                         className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
                         muted
+                        playsInline
                         loop
                         onLoadedData={handleVideoLoaded}
                     ></video>
@@ -132,6 +134,7 @@ export default function Hero() {
                         autoPlay
                         muted
                         loop
+                        playsInline
                         className="absolute left-0 top-0 size-full object-cover object-center"
                         onLoadedData={handleVideoLoaded}
                     ></video>
