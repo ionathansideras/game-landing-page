@@ -112,7 +112,7 @@ export default function Hero() {
                                 playsInline
                                 id="current-video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
-                                onLoadedData={handleVideoLoaded}
+                                onLoad={handleVideoLoaded}
                             ></video>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function Hero() {
                         muted
                         playsInline
                         loop
-                        onLoadedData={handleVideoLoaded}
+                        onLoad={handleVideoLoaded}
                     ></video>
 
                     <video
@@ -136,7 +136,7 @@ export default function Hero() {
                         loop
                         playsInline
                         className="absolute left-0 top-0 size-full object-cover object-center"
-                        onLoadedData={handleVideoLoaded}
+                        onLoad={handleVideoLoaded}
                     ></video>
                 </div>
                 <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
