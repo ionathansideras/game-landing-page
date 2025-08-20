@@ -86,6 +86,9 @@ export default function Hero() {
 
     return (
         <div className="relative h-dvh w-full overflow-x-hidden" id="hero">
+            <div className="z-1000">
+                {loadedVideos} === {totalVideos - 1}
+            </div>
             {isLoading && (
                 <div className="flex-center absolute z-100 h-dvh w-full  overflow-hidden bg-violet-50">
                     <div className="three-body">
