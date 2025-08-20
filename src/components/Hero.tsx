@@ -67,7 +67,7 @@ export default function Hero() {
 
     useEffect(() => {
         console.log("i loaded");
-        if (loadedVideos > 1) {
+        if (loadedVideos >= 1) {
             setIsLoading(false);
         }
     }, [loadedVideos]);
